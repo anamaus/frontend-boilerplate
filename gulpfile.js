@@ -21,9 +21,7 @@
 
     gulp.task('sass', function(){
         return gulp.src('app/scss/**/*.scss')
-            .pipe(sass({
-                includePaths: ["styles"].concat(bourbon)
-            }))
+            .pipe(sass()) // Converts Sass to CSS with gulp-sass
             .pipe(autoprefixer({
                 browsers: ['last 2 versions'],
                 cascade: false
@@ -31,7 +29,7 @@
             .pipe(gulp.dest('app/css'))
             .pipe(browserSync.reload({
                 stream: true
-            }))
+            }));
     });
 
     gulp.task('watch', ['browserSync', 'sass'],function(){
@@ -60,6 +58,15 @@
     });
 
 
+
+    gulp.task('scsslint', function() {
+        return gulp.src(['app/scss/**/*.scss', '!app/scss/vendor/**/*.scss'])
+            .pipe(scsslint({
+                'config': '.scss-lint.yml'
+            }));
+    });
+
+
 //font transfer to dist
     gulp.task('fonts', function() {
         return gulp.src('app/fonts/**/*')
@@ -74,14 +81,14 @@
 //build task 1 and then task/tasks 2, then task3
     gulp.task('build', function (callback) {
         runSequence('clean:dist',
-            ['lint', 'scss-lint', 'sass', 'useref', 'images', 'fonts'],
+            ['lint',  'sass', 'useref', 'images', 'fonts'],
             callback
         );
     });
 
 // build task for 1st set... calls it by typing only gulp in cmd
     gulp.task('default', function (callback) {
-        runSequence(['sass','browserSync', 'watch'],
+        runSequence(['sass','scsslint','browserSync', 'watch'],
             callback
         );
     });
@@ -128,13 +135,6 @@
             // To have the process exit with an error code (1) on
             // lint error, return the stream and pipe to failAfterError last.
             .pipe(eslint.failAfterError());
-    });
-
-    gulp.task('scss-lint', function() {
-        return gulp.src('app/scss/**/*.scss')
-            .pipe(scsslint({
-                'config': '.scss-lint.yml'
-            }));
     });
 
 

@@ -16,3 +16,117 @@ $font-weight-bold: 700;
 
 //grid
 $container-width: 970px;
+
+$grid-float-breakpoint: 1000px;
+$grid-float-breakpoint-max: 1001px;
+
+
+
+//Primary and secondary front-end colors.
+$color--primary: #dedede;
+$color--secondary: #ee82ee;
+
+$bodyBackgroundColorColor:#fff;
+
+//Typography.
+$fontFamily: "Archivo Regular", Arial, sans-serif;
+$fontFamily--secondary: "Baskerville Regular", Georgia, serif;
+$fontFamily--heading: $fontFamily--secondary;
+
+$fontSize--small: 12px;
+$fontSize: 14px;
+$fontSize--medium: 16px;
+$fontSize--large: 18px;
+$fontSize--heroHeading: 64px;
+$fontSize--heroHeadingMd: 38px;
+$fontSize--heroHeadingSm: 28px;
+$fontSize--heading: 42px;
+$fontSize--headingMd: 30px;
+$fontSize--headingSm: 18px;
+$fontSize--headingXs: 16px;
+$fontSize--publishedDate: 12px;
+$fontSize--sectionSubtitle: 22px;
+
+
+$headingColor: $color--secondary;
+
+$lineHeight: 1.8;
+$lineHeightComputed: $lineHeight * $fontSize;
+
+$letterSpacing: 2px;
+$letterSpacing--heading: 6px;
+$letterSpacing--headingExtraSmall: 4px;
+$letterSpacing--headingSmall: 6px;
+$letterSpacing--headingMedium: 14px;
+$letterSpacing--headingLarge: 20px;
+
+$headerPosition: fixed;
+$headerBackgroundColor: transparent;
+$navigationBackgroundColor--xs:  $color--secondary;
+$navigationBackgroundColor--scroll: $color--secondary;
+
+//Navigation.
+$navigationBackgroundColor: transparent;
+$navigationBorderColor: transparent;
+$navigationHeight: 90px;
+$navigationHeight--xs: 90px;
+$navigationHeight--scroll: 90px;
+$navigationMarginBottom: 0;
+$navigationBorderRadius: 0;
+
+//Point at which the navbar becomes uncollapsed.
+$navigationCollapseHeight: 340px;
+$navigationCollapseBreakpoint: 1200px;
+$navigationCollapseBreakpoint--min: $navigationCollapseBreakpoint - 1;
+
+//Navigation links
+$navigationLinkFontSize: 10px;
+$navigationLinkColor: $color--primary;
+$navigationLinkColor--active: $color--secondary;
+$navigationLinkColor--hover: $color--secondary;
+
+$navigationBackgroundColor--hover: transparent;
+$navigationBackgroundColor--active: transparent;
+
+
+$navigationLinkBorderColor--hover: $color--secondary;
+$navigationLinkBorderColor--active: $color--secondary;
+
+//Navigation toggle button
+$navigationToggleButtonBorderColor: $color--primary;
+
+//Footer
+$footerFontSize: 12px;
+$footerSocialLinkFontSize: 18px;
+$footerColor: $color--secondary;
+$footerBackgroundColor: $color--secondary;
+
+//Inputs.
+$inputBackgroundColor: transparent;
+$inputColor: #fff;
+$inputBorderColor:  $color--secondary;
+$inputBorderColor--focus: $color--secondary;
+$inputBorderRadius: 0;
+
+//Shadows.
+$materialShadow: 0 3px 3px 0 rgba(0, 0, 0, .05);
+$materialShadow--raised: 0 5px 11px 0 rgba(0, 0, 0, .18);
+
+//Pagination.
+$paginationColor: rgba($color--secondary, .7);
+$paginationBackgroundColor: transparent;
+$paginationBorder: transparent;
+
+$paginationColor--hover: $color--secondary;
+$paginationBackgroundColor--hover: transparent;
+$paginationBorder--hover: transparent;
+
+$paginationColor--active: $color--secondary;
+$paginationBackgroundColor--active: transparent;
+$paginationBorder--active: transparent;
+
+$paginationColor--disabled: lighten($color--primary, 40%);
+$paginationBackgroundColor--disabled: #fff;
+$paginationBorder--disabled: lighten($color--primary, 40%);
+
+

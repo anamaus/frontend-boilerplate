@@ -1,11 +1,17 @@
 @import 'vendor/reset';
-@import 'bourbon';
-@import 'vendor/bootstrap-variables';
-@import 'vendor/bootstrap-mixins';
+//@import 'bourbon';
+//@import 'vendor/bootstrap-variables';
+//@import 'vendor/bootstrap-mixins';
+
 
 @import 'base/variables';
 @import 'base/placeholder';
 @import 'base/mixin';
+@import 'base/bootstrap';
+
+//import bootstrap sass
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
 
 @import 'layout/grid';
 @import 'layout/header';
@@ -16,4 +22,5 @@
 @import 'components/helper-classes';
 @import 'components/img';
 //@import 'components/typography';
+
 

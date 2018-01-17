@@ -27,9 +27,11 @@
     "gulp-uncss": "^1.0.5",
     "gulp-useref": "^3.0.8",
     "imagemin-jpeg-recompress": "^4.3.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "scss-lint": "0.0.0"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
     "bourbon": "^4.3.4",
     "gulp-cli": "^2.0.0"
   }

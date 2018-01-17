@@ -1,0 +1,54 @@
+//Replace Bootstrap variables with custom variables. Custom variables are changed in _variable.scss.
+
+//Typography.
+
+$font-family-base: $fontFamily;
+$font-size-base: $fontSize;
+$line-height-base: $lineHeight;
+
+//Navigation property
+$navbar-default-color: $navigationBackgroundColor;
+$navbar-default-bg: $navigationBackgroundColor;
+$navbar-default-border: $navigationBorderColor;
+$navbar-height: $navigationHeight;
+$navbar-margin-bottom: $navigationMarginBottom;
+$navbar-border-radius: $navigationBorderRadius;
+$navbar-collapse-max-height: $navigationCollapseHeight;
+$grid-float-breakpoint: $navigationCollapseBreakpoint;
+
+//Navigation links
+$navbar-default-link-color: $navigationLinkColor;
+$navbar-default-link-hover-color: $navigationLinkColor--hover;
+$navbar-default-link-hover-bg: $navigationBackgroundColor--hover;
+$navbar-default-link-active-color: $navigationLinkColor--hover;
+$navbar-default-link-active-bg: $navigationBackgroundColor--active;
+
+//Navigation toggle button
+$navbar-default-toggle-border-color: $navigationToggleButtonBorderColor;
+
+//Forms
+$input-bg: $inputBackgroundColor;
+$input-bg-disabled: $inputBackgroundColor;
+$input-color: $inputColor;
+$input-border: $inputBorderColor;
+$input-border-radius: $inputBorderRadius;
+$input-border-focus: $inputBorderColor--focus;
+$input-group-addon-bg: $inputColor;
+
+//Pagination.
+
+$pagination-color: $paginationColor;
+$pagination-bg: $paginationBackgroundColor;
+$pagination-border: $paginationBorder;
+
+$pagination-hover-color: $paginationColor--hover;
+$pagination-hover-bg: $paginationBackgroundColor--hover;
+$pagination-hover-border: $paginationBorder--hover;
+
+$pagination-active-color: $paginationColor--active;
+$pagination-active-bg: $paginationBackgroundColor--active;
+$pagination-active-border: $paginationBorder--active;
+
+$pagination-disabled-color: $paginationColor--disabled;
+$pagination-disabled-bg: $paginationBackgroundColor--disabled;
+$pagination-disabled-border: $paginationBorder--disabled;
